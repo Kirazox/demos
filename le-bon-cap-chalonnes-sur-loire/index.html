@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Le Bon Cap — Restaurant à Chalonnes-sur-Loire</title>
+<meta name="description" content="Mettez-vous à table, on s&#x27;occupe du reste">
+<meta name="theme-color" content="#1F1B16">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+/* Modèle « Bistrot » : ardoise (texte) · papier (fond) · moutarde (accent) */
+:root{--encre:#1F1B16;--fond:#F4EDE1;--papier:#FFFBF3;--accent:#E0A526;--accent-texte:#8A5A00;--doux:#5A5045;--gris:#A89C89;--trait:#4A4238;--pointille:#BFB3A0;
+--titre:"Bricolage Grotesque",system-ui,sans-serif;--texte:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:#E6DCCB;color:var(--encre);font:17px/1.55 var(--texte);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+svg{display:block}
+.page{max-width:560px;margin:0 auto;background:var(--fond);overflow:hidden}
+.bandeau{background:var(--encre);color:#D9CFBF;font-size:12px;line-height:1.4;padding:7px 16px;text-align:center}
+.titre{font-family:var(--titre);font-weight:800;letter-spacing:-.03em}
+.surtitre{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--accent-texte)}
+/* Barre du haut */
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1px solid #E2D6C2}
+.marque{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.marque span:last-child{font-family:var(--titre);font-weight:800;font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.monogramme{flex:none;width:40px;height:40px;border-radius:50%;background:var(--encre);color:var(--accent);display:grid;place-items:center;font-family:var(--titre);font-weight:800;font-size:16px}
+.pilule{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--encre);color:var(--fond);text-decoration:none;font-weight:700;font-size:15px}
+.pilule svg,.bouton svg{width:18px;height:18px}
+/* Hero : la table dressée sur une nappe vichy */
+.nappe{height:330px;display:flex;justify-content:center;background-color:var(--fond);
+background-image:linear-gradient(90deg,rgba(224,165,38,.5) 50%,transparent 50%),linear-gradient(rgba(224,165,38,.5) 50%,transparent 50%);background-size:36px 36px}
+.ardoise{position:relative;margin:-46px 12px 0;background:var(--encre);color:var(--fond);border-radius:26px;padding:30px 22px 22px;box-shadow:0 24px 40px -24px rgba(31,27,22,.7)}
+.ardoise .surtitre{color:var(--accent);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.ardoise .surtitre i{width:4px;height:4px;border-radius:50%;background:var(--accent)}
+h1{font-family:var(--titre);font-weight:800;line-height:.95;letter-spacing:-.04em;overflow-wrap:anywhere;text-wrap:balance}
+.nom-l{font-size:50px}.nom-m{font-size:42px}.nom-s{font-size:34px}.nom-xs{font-size:28px}
+.accroche{margin-top:16px;font-size:20px;line-height:1.4;color:#D9CFBF}
+.plages{list-style:none;padding:0;display:grid;gap:8px;margin-top:22px}
+.plages li{border:1px solid var(--trait);border-radius:16px;padding:10px 14px}
+.plages small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
+.plages strong{font-family:var(--titre);font-weight:700;font-size:19px}
+.bouton{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 24px;border-radius:999px;background:var(--accent);color:var(--encre);text-decoration:none;font-weight:800;font-size:18px}
+.ardoise .bouton{margin-top:20px}
+.lien-adresse{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;margin-top:6px;color:var(--fond);font-weight:600;font-size:15px;text-align:center;text-decoration:none}
+.lien-adresse svg{flex:none;width:18px;height:18px;color:var(--accent)}
+/* Bandeau qui défile */
+.defile{margin-top:48px;background:var(--accent);border-block:2px solid var(--encre);padding:12px 0;overflow:hidden;white-space:nowrap;font-family:var(--titre);font-weight:800;font-size:20px}
+.piste{display:inline-flex;animation:defile 28s linear infinite}
+.piste span{padding:0 10px}
+.piste span::after{content:"✦";padding-left:20px}
+@keyframes defile{to{transform:translateX(-50%)}}
+/* Sections */
+section{padding:64px 20px}
+h2{font-family:var(--titre);font-weight:800;font-size:38px;line-height:1.05;letter-spacing:-.03em}
+.presentation p:last-child{margin-top:16px;font-family:var(--titre);font-weight:500;font-size:28px;line-height:1.25;letter-spacing:-.015em}
+.services{padding-top:8px}
+.carte-menu{position:relative;background:var(--papier);border:2px solid var(--encre);border-radius:22px;padding:34px 22px 14px;box-shadow:7px 7px 0 var(--encre)}
+.etiquette{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:var(--accent);border:2px solid var(--encre);border-radius:999px;padding:4px 16px;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;white-space:nowrap}
+.carte-menu h2{text-align:center;margin-bottom:18px}
+.carte-menu ul{list-style:none;padding:0}
+.carte-menu li{padding:18px 0;border-top:1px dashed var(--pointille)}
+.carte-menu h3{font-family:var(--titre);font-size:22px;font-weight:800}
+.carte-menu p{margin-top:4px;color:var(--doux)}
+.horaires{background:var(--encre);color:var(--fond)}
+.horaires .surtitre{color:var(--accent)}
+.horaires h2{margin:6px 0 24px}
+.semaine{list-style:none;padding:0;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin-bottom:22px}
+.semaine li{text-align:center;border-radius:12px;padding:9px 0;font-weight:800;font-size:14px;border:1px solid var(--trait);color:var(--gris)}
+.semaine .ouvert{background:var(--accent);border-color:var(--accent);color:var(--encre)}
+table{width:100%;border-collapse:collapse;font-size:18px}
+th,td{padding:14px 0;border-top:1px solid var(--trait);vertical-align:top}
+tr:last-child th,tr:last-child td{border-bottom:1px solid var(--trait)}
+th{text-align:left;font-weight:700;padding-right:12px}
+td{text-align:right}
+.lieu h2{margin-top:6px;font-size:34px}
+.lieu .ville{margin:6px 0 20px;font-size:18px;color:var(--doux)}
+.plan{border:2px solid var(--encre);border-radius:22px;overflow:hidden;box-shadow:7px 7px 0 var(--accent);background:#E8DFD0}
+.plan iframe{display:block;width:100%;height:260px;border:0}
+.actions{display:flex;border-top:2px solid var(--encre)}
+.actions a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:0 12px;background:var(--papier);text-decoration:none;font-weight:700}
+.actions a+a{border-left:2px solid var(--encre)}
+.actions .fonce{background:var(--encre);color:var(--fond)}
+.actions svg{width:18px;height:18px}
+.actions:first-child{border-top:0}
+footer{background:var(--encre);color:#D9CFBF;padding:44px 24px 120px;font-size:13.5px;line-height:1.75;text-align:center}
+footer .monogramme{width:52px;height:52px;font-size:20px;background:var(--accent);color:var(--encre);margin:0 auto 12px}
+footer .nom{font-family:var(--titre);font-weight:800;font-size:26px;color:var(--fond);overflow-wrap:anywhere}
+footer .legal{color:var(--gris);margin-top:18px}
+footer .legal a{color:#D9CFBF}
+/* Bouton d'appel fixe en bas : apparaît quand on a quitté le haut de page (CSS seul, sans JS) */
+.appel-fixe{display:none;position:fixed;left:16px;right:16px;bottom:16px;z-index:10;max-width:528px;margin:0 auto;box-shadow:0 10px 30px -10px rgba(0,0,0,.6)}
+@supports (animation-timeline:scroll()){
+ .appel-fixe{display:flex;visibility:hidden;opacity:0;animation:apparait linear both;animation-timeline:scroll(root);animation-range:80vh 95vh}
+}
+@keyframes apparait{to{visibility:visible;opacity:1}}
+@media (prefers-reduced-motion:reduce){.piste{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="restaurant">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+ <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+ <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></symbol>
+</svg>
+<div class="page">
+<div class="bandeau" role="note">Maquette de démonstration non officielle · Marwen</div>
+
+<nav>
+ <a class="marque" href="#"><span class="monogramme" aria-hidden="true">BC</span><span>Le Bon Cap</span></a>
+ <a class="pilule" href="tel:+33241749330"><svg aria-hidden="true"><use href="#i-tel"/></svg>Appeler</a>
+</nav>
+
+<header>
+ <div class="nappe">
+  <svg viewBox="0 0 390 330" width="390" height="330" aria-hidden="true">
+
+   <g transform="rotate(-6 66 171)"><rect x="34" y="96" width="64" height="150" rx="6" fill="#FFFBF3" stroke="#1F1B16" stroke-width="2.5"/><line x1="44" y1="120" x2="88" y2="120" stroke="#E0A526" stroke-width="3"/>
+    <g stroke="#1F1B16" stroke-width="3" stroke-linecap="round" fill="none"><path d="M66 112V236"/><path d="M56 112V140Q66 152 76 140V112"/><path d="M62 112V136"/><path d="M70 112V136"/></g></g>
+   <circle cx="206" cy="176" r="112" fill="#1F1B16" opacity=".12"/>
+   <circle cx="200" cy="168" r="112" fill="#FFFBF3" stroke="#1F1B16" stroke-width="3"/>
+   <circle cx="200" cy="168" r="80" fill="none" stroke="#E2D6C2" stroke-width="2"/>
+   <circle cx="200" cy="168" r="80" fill="none" stroke="#1F1B16" stroke-width="1.5" stroke-dasharray="2 8"/>
+   <g transform="rotate(4 336 171)" fill="#FFFBF3" stroke="#1F1B16" stroke-width="3" stroke-linejoin="round"><path d="M330 100Q348 120 344 172H330Z"/><rect x="329" y="172" width="12" height="70" rx="6"/></g>
+   <circle cx="336" cy="60" r="30" fill="#FFFBF3" fill-opacity=".7" stroke="#1F1B16" stroke-width="2.5"/>
+   <circle cx="336" cy="60" r="18" fill="#E0A526" fill-opacity=".6"/>
+
+
+  </svg>
+ </div>
+
+ <div class="ardoise">
+  <p class="surtitre">Restaurant <i></i> Chalonnes-sur-Loire</p>
+  <h1 class="nom-l">Le Bon Cap</h1>
+  <p class="accroche">Mettez-vous à table, on s&#x27;occupe du reste</p>
+  <ul class="plages">
+   <li><small>Lundi, mardi</small><strong>11 h – minuit</strong></li>
+   <li><small>Vendredi – Dimanche</small><strong>11 h – minuit</strong></li>
+  </ul>
+  <a class="bouton" href="tel:+33241749330"><svg aria-hidden="true"><use href="#i-tel"/></svg>Appeler</a>
+  <a class="lien-adresse" href="#lieu"><svg aria-hidden="true"><use href="#i-lieu"/></svg><span>9 Quai Gambetta, Chalonnes-sur-Loire</span></a>
+ </div>
+</header>
+
+<main>
+
+<div class="defile" aria-hidden="true"><div class="piste">
+<span>Déjeuner</span><span>Dîner</span><span>Service à table</span>
+<span>Déjeuner</span><span>Dîner</span><span>Service à table</span>
+<span>Déjeuner</span><span>Dîner</span><span>Service à table</span>
+<span>Déjeuner</span><span>Dîner</span><span>Service à table</span>
+</div></div>
+
+
+
+<section class="presentation">
+ <p class="surtitre">La maison</p>
+ <p>Un restaurant simple et accueillant où l&#x27;on prend plaisir à bien manger. Poussez la porte à Chalonnes-sur-Loire et installez-vous à votre aise.</p>
+</section>
+
+
+
+<section class="services">
+ <div class="carte-menu">
+  <span class="etiquette" aria-hidden="true">À la carte</span>
+  <h2>Chez nous</h2>
+  <ul>
+   <li><h3>Déjeuner</h3><p>Une pause gourmande pour bien reprendre sa journée.</p></li>
+   <li><h3>Dîner</h3><p>Un repas détendu pour finir la journée en douceur.</p></li>
+   <li><h3>Service à table</h3><p>Installez-vous tranquillement, on prend soin de vous.</p></li>
+
+  </ul>
+ </div>
+</section>
+
+
+
+<section class="horaires" id="horaires">
+ <p class="surtitre">Quand venir</p>
+ <h2>Horaires</h2>
+ <ul class="semaine">
+  <li class="ouvert" title="Lundi">L</li>
+  <li class="ouvert" title="Mardi">M</li>
+  <li class="ferme" title="Mercredi">M</li>
+  <li class="ferme" title="Jeudi">J</li>
+  <li class="ouvert" title="Vendredi">V</li>
+  <li class="ouvert" title="Samedi">S</li>
+  <li class="ouvert" title="Dimanche">D</li>
+ </ul>
+ <table>
+  <tr><th scope="row">Lundi, mardi</th><td>11 h – minuit</td></tr>
+  <tr><th scope="row">Mercredi, jeudi</th><td>Fermé</td></tr>
+  <tr><th scope="row">Vendredi – Dimanche</th><td>11 h – minuit</td></tr>
+
+ </table>
+</section>
+
+
+
+<section class="lieu" id="lieu">
+ <p class="surtitre">Nous trouver</p>
+ <h2>9 Quai Gambetta, Chalonnes-sur-Loire</h2>
+ <p class="ville">Restaurant à Chalonnes-sur-Loire</p>
+ <div class="plan">
+  <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.766824,47.351648,-0.758824,47.355648&amp;layer=mapnik&amp;marker=47.353648,-0.762824" title="Carte : Le Bon Cap" loading="lazy"></iframe>
+  <div class="actions">
+   <a href="https://www.openstreetmap.org/?mlat=47.353648&amp;mlon=-0.762824#map=18/47.353648/-0.762824" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-route"/></svg>Itinéraire</a>
+   <a class="fonce" href="tel:+33241749330">02 41 74 93 30</a>
+  </div>
+ </div>
+</section>
+
+</main>
+
+<footer>
+ <span class="monogramme" aria-hidden="true">BC</span>
+ <p class="nom">Le Bon Cap</p>
+ <p>Restaurant à Chalonnes-sur-Loire · <a href="https://www.instagram.com/leboncap49" target="_blank" rel="noopener">Instagram</a></p>
+ <div class="legal">
+  <p>Éditeur de cette maquette : Marwen — <a href="mailto:marwenchbiki999@gmail.com">marwenchbiki999@gmail.com</a> — SIRET : en cours</p>
+  <p>Carte © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">contributeurs OpenStreetMap</a></p>
+ </div>
+</footer>
+
+<a class="bouton appel-fixe" href="tel:+33241749330"><svg aria-hidden="true"><use href="#i-tel"/></svg>Appeler</a>
+</div>
+</body>
+</html>
