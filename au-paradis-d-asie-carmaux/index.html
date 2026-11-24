@@ -5,225 +5,188 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Au paradis d&#x27;Asie — Restaurant à Carmaux</title>
-<meta name="description" content="La cuisine asiatique qui voyage dans votre assiette">
-<meta name="theme-color" content="#1F1B16">
+<meta name="description" content="Les saveurs d&#x27;Asie, servies avec le sourire">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+<!-- Modèle « restaurant » généré par design/convertir_maquettes.py depuis design/Restaurant.dc.html : ne pas modifier à la main -->
 <style>
-/* Modèle « Bistrot » : ardoise (texte) · papier (fond) · moutarde (accent) */
-:root{--encre:#1F1B16;--fond:#F4EDE1;--papier:#FFFBF3;--accent:#E0A526;--accent-texte:#8A5A00;--doux:#5A5045;--gris:#A89C89;--trait:#4A4238;--pointille:#BFB3A0;
---titre:"Bricolage Grotesque",system-ui,sans-serif;--texte:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-body{background:#E6DCCB;color:var(--encre);font:17px/1.55 var(--texte);-webkit-font-smoothing:antialiased}
-a{color:inherit}
-svg{display:block}
-.page{max-width:560px;margin:0 auto;background:var(--fond);overflow:hidden}
-.bandeau{background:var(--encre);color:#D9CFBF;font-size:12px;line-height:1.4;padding:7px 16px;text-align:center}
-.titre{font-family:var(--titre);font-weight:800;letter-spacing:-.03em}
-.surtitre{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--accent-texte)}
-/* Barre du haut */
-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1px solid #E2D6C2}
-.marque{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
-.marque span:last-child{font-family:var(--titre);font-weight:800;font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.monogramme{flex:none;width:40px;height:40px;border-radius:50%;background:var(--encre);color:var(--accent);display:grid;place-items:center;font-family:var(--titre);font-weight:800;font-size:16px}
-.pilule{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--encre);color:var(--fond);text-decoration:none;font-weight:700;font-size:15px}
-.pilule svg,.bouton svg{width:18px;height:18px}
-/* Hero : la table dressée sur une nappe vichy */
-.nappe{height:330px;display:flex;justify-content:center;background-color:var(--fond);
-background-image:linear-gradient(90deg,rgba(224,165,38,.5) 50%,transparent 50%),linear-gradient(rgba(224,165,38,.5) 50%,transparent 50%);background-size:36px 36px}
-.ardoise{position:relative;margin:-46px 12px 0;background:var(--encre);color:var(--fond);border-radius:26px;padding:30px 22px 22px;box-shadow:0 24px 40px -24px rgba(31,27,22,.7)}
-.ardoise .surtitre{color:var(--accent);display:flex;align-items:center;gap:10px;margin-bottom:14px}
-.ardoise .surtitre i{width:4px;height:4px;border-radius:50%;background:var(--accent)}
-h1{font-family:var(--titre);font-weight:800;line-height:.95;letter-spacing:-.04em;overflow-wrap:anywhere;text-wrap:balance}
-.nom-l{font-size:50px}.nom-m{font-size:42px}.nom-s{font-size:34px}.nom-xs{font-size:28px}
-.accroche{margin-top:16px;font-size:20px;line-height:1.4;color:#D9CFBF}
-.plages{list-style:none;padding:0;display:grid;gap:8px;margin-top:22px}
-.plages li{border:1px solid var(--trait);border-radius:16px;padding:10px 14px}
-.plages small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
-.plages strong{font-family:var(--titre);font-weight:700;font-size:19px}
-.bouton{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 24px;border-radius:999px;background:var(--accent);color:var(--encre);text-decoration:none;font-weight:800;font-size:18px}
-.ardoise .bouton{margin-top:20px}
-.lien-adresse{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;margin-top:6px;color:var(--fond);font-weight:600;font-size:15px;text-align:center;text-decoration:none}
-.lien-adresse svg{flex:none;width:18px;height:18px;color:var(--accent)}
-/* Bandeau qui défile */
-.defile{margin-top:48px;background:var(--accent);border-block:2px solid var(--encre);padding:12px 0;overflow:hidden;white-space:nowrap;font-family:var(--titre);font-weight:800;font-size:20px}
-.piste{display:inline-flex;animation:defile 28s linear infinite}
-.piste span{padding:0 10px}
-.piste span::after{content:"✦";padding-left:20px}
-@keyframes defile{to{transform:translateX(-50%)}}
-/* Sections */
-section{padding:64px 20px}
-h2{font-family:var(--titre);font-weight:800;font-size:38px;line-height:1.05;letter-spacing:-.03em}
-.presentation p:last-child{margin-top:16px;font-family:var(--titre);font-weight:500;font-size:28px;line-height:1.25;letter-spacing:-.015em}
-.services{padding-top:8px}
-.carte-menu{position:relative;background:var(--papier);border:2px solid var(--encre);border-radius:22px;padding:34px 22px 14px;box-shadow:7px 7px 0 var(--encre)}
-.etiquette{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:var(--accent);border:2px solid var(--encre);border-radius:999px;padding:4px 16px;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;white-space:nowrap}
-.carte-menu h2{text-align:center;margin-bottom:18px}
-.carte-menu ul{list-style:none;padding:0}
-.carte-menu li{padding:18px 0;border-top:1px dashed var(--pointille)}
-.carte-menu h3{font-family:var(--titre);font-size:22px;font-weight:800}
-.carte-menu p{margin-top:4px;color:var(--doux)}
-.horaires{background:var(--encre);color:var(--fond)}
-.horaires .surtitre{color:var(--accent)}
-.horaires h2{margin:6px 0 24px}
-.semaine{list-style:none;padding:0;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin-bottom:22px}
-.semaine li{text-align:center;border-radius:12px;padding:9px 0;font-weight:800;font-size:14px;border:1px solid var(--trait);color:var(--gris)}
-.semaine .ouvert{background:var(--accent);border-color:var(--accent);color:var(--encre)}
-table{width:100%;border-collapse:collapse;font-size:18px}
-th,td{padding:14px 0;border-top:1px solid var(--trait);vertical-align:top}
-tr:last-child th,tr:last-child td{border-bottom:1px solid var(--trait)}
-th{text-align:left;font-weight:700;padding-right:12px}
-td{text-align:right}
-.lieu h2{margin-top:6px;font-size:34px}
-.lieu .ville{margin:6px 0 20px;font-size:18px;color:var(--doux)}
-.plan{border:2px solid var(--encre);border-radius:22px;overflow:hidden;box-shadow:7px 7px 0 var(--accent);background:#E8DFD0}
-.plan iframe{display:block;width:100%;height:260px;border:0}
-.actions{display:flex;border-top:2px solid var(--encre)}
-.actions a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:0 12px;background:var(--papier);text-decoration:none;font-weight:700}
-.actions a+a{border-left:2px solid var(--encre)}
-.actions .fonce{background:var(--encre);color:var(--fond)}
-.actions svg{width:18px;height:18px}
-.actions:first-child{border-top:0}
-footer{background:var(--encre);color:#D9CFBF;padding:44px 24px 120px;font-size:13.5px;line-height:1.75;text-align:center}
-footer .monogramme{width:52px;height:52px;font-size:20px;background:var(--accent);color:var(--encre);margin:0 auto 12px}
-footer .nom{font-family:var(--titre);font-weight:800;font-size:26px;color:var(--fond);overflow-wrap:anywhere}
-footer .legal{color:var(--gris);margin-top:18px}
-footer .legal a{color:#D9CFBF}
-/* Bouton d'appel fixe en bas : apparaît quand on a quitté le haut de page (CSS seul, sans JS) */
-.appel-fixe{display:none;position:fixed;left:16px;right:16px;bottom:16px;z-index:10;max-width:528px;margin:0 auto;box-shadow:0 10px 30px -10px rgba(0,0,0,.6)}
-@supports (animation-timeline:scroll()){
- .appel-fixe{display:flex;visibility:hidden;opacity:0;animation:apparait linear both;animation-timeline:scroll(root);animation-range:80vh 95vh}
+body{margin:0;font-family:'Manrope', system-ui, sans-serif;color:#F2ECE0;background:#18202C}
+a{color:#E2B56A}a:hover{color:#F2ECE0}
+.gal::-webkit-scrollbar{display:none}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .04em .1em 0;margin-bottom:-.1em}
+.w>span{display:inline-block;animation:rise 1s cubic-bezier(.16,.8,.2,1) both;animation-delay:calc(var(--d) * 110ms + 250ms)}
+@keyframes rise{from{transform:translateY(108%) rotate(4deg)}}
+.fi{animation:fi .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--fd,.8s)}
+@keyframes fi{from{opacity:0;transform:translateY(14px)}}
+.kb{animation:kb 18s cubic-bezier(.2,.6,.2,1) both}
+@keyframes kb{from{transform:scale(1.16)}to{transform:scale(1.02)}}
+.grow{transform-origin:top;animation:grow .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--d,0) * 60ms + 200ms)}
+@keyframes grow{from{transform:scaleY(0)}}
+.pop{animation:pop 1.1s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--d,0) * 140ms + 150ms)}
+@keyframes pop{from{opacity:0;transform:scale(.82) translateY(20px)}}
+.sway{transform-origin:12% 50%;animation:sway 5s ease-in-out infinite alternate}
+@keyframes sway{from{transform:rotate(-4deg)}to{transform:rotate(3deg)}}
+.draw{animation:draw 1.4s cubic-bezier(.6,0,.2,1) both;animation-delay:.2s}
+@keyframes draw{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.drop{animation:drop 1s cubic-bezier(.3,1.4,.5,1) both;animation-delay:.15s}
+@keyframes drop{from{transform:translateY(-105%)}}
+.mq{display:flex;overflow:hidden}
+.mq>div{display:flex;align-items:center;flex-shrink:0;animation:mq var(--mq,32s) linear infinite}
+.mq:hover>div,.mq:active>div{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-100%)}}
+.bt{position:relative;transition:transform .18s cubic-bezier(.2,.8,.2,1),box-shadow .3s ease,filter .2s;-webkit-tap-highlight-color:transparent}
+.bt:hover{box-shadow:0 0 0 6px var(--glow),0 10px 30px -8px var(--glow)}
+.bt:active{transform:scale(.95);box-shadow:0 0 0 10px var(--glow),0 0 36px 4px var(--glow);filter:brightness(1.08)}
+.bt:focus-visible{outline:3px solid #E2B56A;outline-offset:3px}
+.gal{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:24px;padding:0 24px 4px;scrollbar-width:none}
+.gal>figure{scroll-snap-align:start}
+[data-js] .rv{opacity:0;transform:translateY(34px);transition:opacity .9s ease,transform 1s cubic-bezier(.16,.8,.2,1)}
+[data-js] .rv[data-in]{opacity:1;transform:none}
+[data-js] .st>*{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .8s cubic-bezier(.16,.8,.2,1);transition-delay:calc(var(--i) * 95ms)}
+[data-js] .st[data-in]>*{opacity:1;transform:none}
+.cb{transition:transform .55s cubic-bezier(.16,.8,.2,1),opacity .4s ease}
+[data-js]:not([data-past]) .cb{transform:translateY(120%);opacity:0;pointer-events:none}
+@supports (animation-timeline: view()){
+ .px{animation:px linear both;animation-timeline:view()}
+ @keyframes px{from{transform:translateY(-7%)}to{transform:translateY(7%)}}
+ .hpx{animation:hpx linear both;animation-timeline:view();animation-range:exit 0% exit 100%}
+ @keyframes hpx{to{transform:translateY(28%)}}
+ .gw{animation:gw linear both;animation-timeline:view()}
+ @keyframes gw{from{transform:translateX(4%)}to{transform:translateX(-46%)}}
 }
-@keyframes apparait{to{visibility:visible;opacity:1}}
-@media (prefers-reduced-motion:reduce){.piste{animation:none}html{scroll-behavior:auto}}
+@media (prefers-reduced-motion: reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ [data-js] .rv,[data-js] .st>*{opacity:1!important;transform:none!important}
+ .mq{overflow-x:auto}
+}
+
+td.ferme{color:#B8B1A4!important}
+/* ---- Tailles des noms longs (classe calculée par assemblage.classe_nom) ---- */
+.nom-l{--k:1}.nom-m{--k:.82}.nom-s{--k:.66}.nom-xs{--k:.52}
+/* ---- Ordinateur : contenu limité à 1200 px, marges de 48 px ---- */
+@media (min-width:900px){
+ .hero h1{--zh1:1.6}
+ .hero-txt{padding-left:max(48px,calc(50% - 552px))!important;padding-right:max(48px,calc(50% - 552px))!important}
+ .hero-txt>*{max-width:760px}
+ .hero-txt>p[style*="32ch"]{font-size:21px!important}
+ .hero-carte{width:min(820px,calc(100% - 96px));margin-left:auto!important;margin-right:auto!important;padding-left:48px!important;padding-right:48px!important}
+ .hero-carte>*>*{max-width:none}
+ .hero-pic{margin-left:max(48px,calc(50% - 552px))!important;margin-right:max(48px,calc(50% - 552px))!important}
+ section[aria-label="Infos pratiques"]{padding-left:max(32px,calc(50% - 568px));padding-right:max(32px,calc(50% - 568px))}
+ section[aria-label="Infos pratiques"]>*{flex-basis:240px!important;padding-top:24px!important;padding-bottom:24px!important}
+ .mq{font-size:44px!important}.mq>div{animation-duration:40s}
+ section[aria-label="Présentation"],#services,#acces,footer{padding-left:max(48px,calc(50% - 552px))!important;padding-right:max(48px,calc(50% - 552px))!important}
+ section[aria-label="Présentation"]>p{font-size:42px!important;max-width:26ch}
+ .gw{font-size:260px!important}
+ h2{font-size:78px!important}
+ #services>ul,#services>ol{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));column-gap:48px}
+ section[aria-label="Galerie"]>div.rv:first-child,section[aria-label="Galerie"]>p{padding-left:max(48px,calc(50% - 552px))!important;padding-right:max(48px,calc(50% - 552px))!important}
+ .gal{padding:0 max(48px,calc(50% - 552px)) 4px;scroll-padding-inline:max(48px,calc(50% - 552px))}
+ .gal>figure{flex:0 0 min(440px,40%)!important;height:520px!important}
+ #acces{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:64px;align-items:start}
+ #acces>h2{grid-column:1/-1}
+ #acces>table,#acces>p{grid-column:1;grid-row:2/span 3}
+ #acces>div{grid-column:2}
+ #acces iframe{height:340px!important}
+ footer{flex-direction:row!important;flex-wrap:wrap;column-gap:48px;padding-bottom:56px!important}
+ footer>p:first-child{flex:1 0 100%}
+ .cb{left:auto!important;right:28px!important;bottom:28px!important;padding:0!important;background:none!important;border:0!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+ .cb .bt{box-shadow:0 14px 34px -10px rgba(0,0,0,.5)}
+}
 </style>
+<script>if('IntersectionObserver'in window)document.documentElement.setAttribute('data-js','')</script>
 </head>
-<body class="restaurant">
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
- <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
- <symbol id="i-lieu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
- <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></symbol>
-</svg>
-<div class="page">
-<div class="bandeau" role="note">Maquette de démonstration non officielle · Marwen</div>
+<body>
+<div style="position: sticky; top: 0; z-index: 5; background: #E2B56A; color: #18202C; font-family: 'Manrope', system-ui, sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.04em; text-align: center; padding: 7px 12px; height: 28px; box-sizing: border-box">Maquette de démonstration non officielle · Marwen</div>
 
-<nav>
- <a class="marque" href="#"><span class="monogramme" aria-hidden="true">PA</span><span>Au paradis d&#x27;Asie</span></a>
- <a class="pilule" href="tel:+33563369354"><svg aria-hidden="true"><use href="#i-tel"/></svg>Appeler</a>
-</nav>
-
-<header>
- <div class="nappe">
-  <svg viewBox="0 0 390 330" width="390" height="330" aria-hidden="true">
-
-   <g transform="rotate(-6 66 171)"><rect x="34" y="96" width="64" height="150" rx="6" fill="#FFFBF3" stroke="#1F1B16" stroke-width="2.5"/><line x1="44" y1="120" x2="88" y2="120" stroke="#E0A526" stroke-width="3"/>
-    <g stroke="#1F1B16" stroke-width="3" stroke-linecap="round" fill="none"><path d="M66 112V236"/><path d="M56 112V140Q66 152 76 140V112"/><path d="M62 112V136"/><path d="M70 112V136"/></g></g>
-   <circle cx="206" cy="176" r="112" fill="#1F1B16" opacity=".12"/>
-   <circle cx="200" cy="168" r="112" fill="#FFFBF3" stroke="#1F1B16" stroke-width="3"/>
-   <circle cx="200" cy="168" r="80" fill="none" stroke="#E2D6C2" stroke-width="2"/>
-   <circle cx="200" cy="168" r="80" fill="none" stroke="#1F1B16" stroke-width="1.5" stroke-dasharray="2 8"/>
-   <g transform="rotate(4 336 171)" fill="#FFFBF3" stroke="#1F1B16" stroke-width="3" stroke-linejoin="round"><path d="M330 100Q348 120 344 172H330Z"/><rect x="329" y="172" width="12" height="70" rx="6"/></g>
-   <circle cx="336" cy="60" r="30" fill="#FFFBF3" fill-opacity=".7" stroke="#1F1B16" stroke-width="2.5"/>
-   <circle cx="336" cy="60" r="18" fill="#E0A526" fill-opacity=".6"/>
-
-
-  </svg>
- </div>
-
- <div class="ardoise">
-  <p class="surtitre">Restaurant <i></i> Carmaux</p>
-  <h1 class="nom-m">Au paradis d&#x27;Asie</h1>
-  <p class="accroche">La cuisine asiatique qui voyage dans votre assiette</p>
-  <ul class="plages">
-   <li><small>Mardi – Dimanche</small><strong>12 h – 14 h et 19 h – 21 h 30</strong></li>
-  </ul>
-  <a class="bouton" href="tel:+33563369354"><svg aria-hidden="true"><use href="#i-tel"/></svg>Appeler</a>
-  <a class="lien-adresse" href="#lieu"><svg aria-hidden="true"><use href="#i-lieu"/></svg><span>14 Rue de l&#x27;Hôtel de Ville, 81400 Carmaux</span></a>
- </div>
-</header>
-
-<main>
-
-<div class="defile" aria-hidden="true"><div class="piste">
-<span>Déjeuner</span><span>Dîner</span><span>Sur place</span>
-<span>Déjeuner</span><span>Dîner</span><span>Sur place</span>
-<span>Déjeuner</span><span>Dîner</span><span>Sur place</span>
-<span>Déjeuner</span><span>Dîner</span><span>Sur place</span>
-</div></div>
-
-
-
-<section class="presentation">
- <p class="surtitre">La maison</p>
- <p>Un restaurant asiatique à Carmaux, où l&#x27;on vous sert avec le sourire. Venez découvrir des saveurs d&#x27;ailleurs, préparées avec soin.</p>
-</section>
-
-
-
-<section class="services">
- <div class="carte-menu">
-  <span class="etiquette" aria-hidden="true">À la carte</span>
-  <h2>Chez nous</h2>
-  <ul>
-   <li><h3>Déjeuner</h3><p>Une pause savoureuse et dépaysante pour le midi.</p></li>
-   <li><h3>Dîner</h3><p>Un repas tranquille pour terminer la journée en douceur.</p></li>
-   <li><h3>Sur place</h3><p>Installez-vous confortablement et laissez-vous servir.</p></li>
-
-  </ul>
- </div>
-</section>
-
-
-
-<section class="horaires" id="horaires">
- <p class="surtitre">Quand venir</p>
- <h2>Horaires</h2>
- <ul class="semaine">
-  <li class="ferme" title="Lundi">L</li>
-  <li class="ouvert" title="Mardi">M</li>
-  <li class="ouvert" title="Mercredi">M</li>
-  <li class="ouvert" title="Jeudi">J</li>
-  <li class="ouvert" title="Vendredi">V</li>
-  <li class="ouvert" title="Samedi">S</li>
-  <li class="ouvert" title="Dimanche">D</li>
- </ul>
- <table>
-  <tr><th scope="row">Lundi</th><td>Fermé</td></tr>
-  <tr><th scope="row">Mardi – Dimanche</th><td>12 h – 14 h et 19 h – 21 h 30</td></tr>
-
- </table>
-</section>
-
-
-
-<section class="lieu" id="lieu">
- <p class="surtitre">Nous trouver</p>
- <h2>14 Rue de l&#x27;Hôtel de Ville, 81400 Carmaux</h2>
- <p class="ville">Restaurant à Carmaux</p>
- <div class="plan">
-  <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=2.156212,44.047790,2.164212,44.051790&amp;layer=mapnik&amp;marker=44.049790,2.160212" title="Carte : Au paradis d&#x27;Asie" loading="lazy"></iframe>
-  <div class="actions">
-   <a href="https://www.openstreetmap.org/?mlat=44.049790&amp;mlon=2.160212#map=18/44.049790/2.160212" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-route"/></svg>Itinéraire</a>
-   <a class="fonce" href="tel:+33563369354">05 63 36 93 54</a>
+<section class="hero" aria-label="Accueil" style="min-height: calc(100svh - 28px); position: relative; overflow: hidden; background: #18202C; display: flex; flex-direction: column; justify-content: flex-end">
+  <div class="hpx" style="position: absolute; inset: 0; border-radius: 0; overflow: hidden"><div class="kb" style="position: absolute; inset: 0"><img src="photos/restaurant-18233556.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;"></div></div><div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(16,22,31,0.97) 0%, rgba(16,22,31,0.75) 48%, rgba(16,22,31,0.15) 85%)"></div>
+  
+  <div class="hero-txt hero-carte" style="position: relative; margin: 0 18px 30px; padding: 30px 18px 26px">
+    <div class="draw" aria-hidden="true" style="position: absolute; inset: 0; border: 1px solid #E2B56A"></div>
+    <div class="draw" aria-hidden="true" style="position: absolute; inset: 6px; border: 1px solid rgba(226,181,106,0.55)"></div>
+    <div style="position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px"><div aria-hidden="true" style="display: flex; align-items: center; gap: 10px; justify-content: center"><span style="width: 48px; height: 1px; background: #E2B56A"></span><span style="width: 8px; height: 8px; background: #E2B56A; transform: rotate(45deg)"></span><span style="width: 48px; height: 1px; background: #E2B56A"></span></div>
+<p class="fi" style="--fd: .1s; margin: 0; font-family: 'Manrope', system-ui, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #E2B56A">Restaurant · Carmaux</p>
+<h1 class="nom-m" style="margin: 0; font-family: 'Gloock', Georgia, serif; font-size: calc(46px * var(--k, 1) * var(--zh1, 1)); line-height: 1.0; font-weight: 400;   color: #F2ECE0; text-align: center; overflow-wrap: break-word; hyphens: auto"><span class="w"><span style="--d: 0">Au</span></span> <span class="w"><span style="--d: 1">paradis</span></span> <span class="w"><span style="--d: 2">d&#x27;Asie</span></span> </h1>
+<p class="fi" style="--fd: 0.75s; margin: 0; font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; line-height: 1.45; color: #F2ECE0; max-width: 32ch">Les saveurs d&#x27;Asie, servies avec le sourire</p>
+<div class="fi" style="--fd: 0.90s; display: flex; flex-wrap: wrap; gap: 10px; width: 100%; margin-top: 4px">
+  <a class="bt" href="tel:+33563369354" style="--glow: rgba(226, 181, 106, 0.3); flex: 1 1 140px; min-height: 56px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 22px; box-sizing: border-box; border-radius: 0; text-decoration: none; font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; font-weight: 600; background: #E2B56A; color: #18202C; border: 2px solid #E2B56A;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#18202C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span style="white-space: nowrap">Appeler</span></a>
+  
+  <a class="bt" href="#services" style="--glow: rgba(226, 181, 106, 0.3); flex: 1 1 140px; min-height: 56px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 22px; box-sizing: border-box; border-radius: 0; text-decoration: none; font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; font-weight: 600; background: transparent; color: #F2ECE0; border: 2px solid #F2ECE0;"><span style="white-space: nowrap">La carte</span></a>
+</div>
+<p class="fi" style="--fd: 1.05s; margin: 0; display: flex; gap: 8px; align-items: center; justify-content: center; font-family: 'Manrope', system-ui, sans-serif; font-size: 14px; color: #E2B56A"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E2B56A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>14 Rue de l&#x27;Hôtel de Ville, Carmaux</span></p></div>
   </div>
- </div>
+  <div data-sentinel="" aria-hidden="true" style="position: absolute; left: 0; bottom: 0; width: 1px; height: 1px"></div>
 </section>
 
-</main>
+<section aria-label="Infos pratiques" style="background: #F2ECE0; display: flex; flex-wrap: wrap">
+  <div style="flex: 1 1 150px; display: flex; gap: 10px; align-items: flex-start; padding: 18px 16px; box-sizing: border-box; text-decoration: none"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A6B1E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span style="display: flex; flex-direction: column; gap: 3px"><span style="font-family: 'Manrope', system-ui, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #5A5550">Ouvert</span><span style="font-family: 'Manrope', system-ui, sans-serif; font-size: 15px; line-height: 1.35; color: #18202C">Tous les jours sauf le lundi</span></span></div>
+  <a href="https://www.openstreetmap.org/?mlat=44.049790&amp;mlon=2.160212#map=18/44.049790/2.160212" style="flex: 1 1 150px; display: flex; gap: 10px; align-items: flex-start; padding: 18px 16px; box-sizing: border-box; text-decoration: none"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A6B1E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span style="display: flex; flex-direction: column; gap: 3px"><span style="font-family: 'Manrope', system-ui, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #5A5550">Adresse</span><span style="font-family: 'Manrope', system-ui, sans-serif; font-size: 15px; line-height: 1.35; color: #18202C">14 Rue de l&#x27;Hôtel de Ville<br>81400 Carmaux</span></span></a>
+  <a href="tel:+33563369354" style="flex: 1 1 150px; display: flex; gap: 10px; align-items: flex-start; padding: 18px 16px; box-sizing: border-box; text-decoration: none"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A6B1E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span style="display: flex; flex-direction: column; gap: 3px"><span style="font-family: 'Manrope', system-ui, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #5A5550">Téléphone</span><span style="font-family: 'Manrope', system-ui, sans-serif; font-size: 15px; line-height: 1.35; color: #18202C"><span style="white-space: nowrap">05 63 36 93 54</span></span></span></a>
+</section>
+<div class="mq" aria-hidden="true" style="border-block: 1px solid #3A4657; padding: 18px 0; font-family: 'Manrope', system-ui, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #E2B56A"><div style="gap: 26px; padding-right: 26px; --mq: 36s"><span style="white-space: nowrap">Déjeuner</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span><span style="white-space: nowrap">Dîner</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span><span style="white-space: nowrap">Cuisine asiatique</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span><span style="white-space: nowrap">Sur place</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span><span style="white-space: nowrap">Déjeuner</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span><span style="white-space: nowrap">Dîner</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span><span style="white-space: nowrap">Cuisine asiatique</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span><span style="white-space: nowrap">Sur place</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span></div><div aria-hidden="true" style="gap: 26px; padding-right: 26px; --mq: 36s"><span style="white-space: nowrap">Déjeuner</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span><span style="white-space: nowrap">Dîner</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span><span style="white-space: nowrap">Cuisine asiatique</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span><span style="white-space: nowrap">Sur place</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span><span style="white-space: nowrap">Déjeuner</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span><span style="white-space: nowrap">Dîner</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span><span style="white-space: nowrap">Cuisine asiatique</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span><span style="white-space: nowrap">Sur place</span><span aria-hidden="true" style="width: 7px; height: 7px; background: #E2B56A; transform: rotate(45deg)"></span></div></div>
 
-<footer>
- <span class="monogramme" aria-hidden="true">PA</span>
- <p class="nom">Au paradis d&#x27;Asie</p>
- <p>Restaurant à Carmaux · <a href="https://www.facebook.com/restaurantparadisdasie" target="_blank" rel="noopener">Facebook</a></p>
- <div class="legal">
-  <p>Éditeur de cette maquette : Marwen — <a href="mailto:marwenchbiki999@gmail.com">marwenchbiki999@gmail.com</a> — SIRET : en cours</p>
-  <p>Carte © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">contributeurs OpenStreetMap</a></p>
- </div>
+<section aria-label="Présentation" style="padding: 56px 24px 8px; display: flex; flex-direction: column; gap: 20px">
+  <div class="rv"><div style="display: flex; justify-content: flex-start"><div aria-hidden="true" style="display: flex; align-items: center; gap: 10px; justify-content: center"><span style="width: 48px; height: 1px; background: #E2B56A"></span><span style="width: 8px; height: 8px; background: #E2B56A; transform: rotate(45deg)"></span><span style="width: 48px; height: 1px; background: #E2B56A"></span></div></div></div>
+  <p class="rv" style="margin: 0; font-family: 'Gloock', Georgia, serif; font-size: 27px; line-height: 1.3; color: #F2ECE0">Un restaurant de cuisine asiatique à Carmaux, où l&#x27;on voyage le temps d&#x27;un repas. Venez vous régaler dans une ambiance simple et accueillante.</p>
+</section>
+<div aria-hidden="true" style="overflow: hidden; padding: 34px 0 0"><div class="gw" style="white-space: nowrap; width: max-content; font-family: 'Gloock', Georgia, serif; line-height: 0.9; font-size: 120px; color: transparent; -webkit-text-stroke: 1px #E2B56A">Cuisine · Table · Cuisine</div></div>
+
+<section id="services" aria-label="Au menu" style="padding: 44px 24px 48px; display: flex; flex-direction: column; gap: 24px; ">
+  <h2 class="rv" style="margin: 0; font-family: 'Gloock', Georgia, serif; font-size: 50px; line-height: 0.98; font-weight: 400;  color: #F2ECE0; overflow-wrap: break-word">Au menu</h2>
+  <div style="border: 1px solid #E2B56A; outline: 1px solid rgba(226,181,106,0.55); outline-offset: 5px; margin: 6px; padding: 28px 20px"><ul class="st" style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0"><li style="--i: 0; display: flex; flex-direction: column; gap: 6px; align-items: center; text-align: center; padding: 14px 0"><span style="font-family: 'Gloock', Georgia, serif; font-size: 24px; color: #F2ECE0">Déjeuner</span><span style="font-size: 15px; line-height: 1.45; color: #B8B1A4">Une pause savoureuse pour bien profiter de votre midi.</span></li><li style="--i: 1; display: flex; flex-direction: column; gap: 6px; align-items: center; text-align: center; padding: 14px 0"><span style="font-family: 'Gloock', Georgia, serif; font-size: 24px; color: #F2ECE0">Dîner</span><span style="font-size: 15px; line-height: 1.45; color: #B8B1A4">Un repas dépaysant à partager le soir.</span></li><li style="--i: 2; display: flex; flex-direction: column; gap: 6px; align-items: center; text-align: center; padding: 14px 0"><span style="font-family: 'Gloock', Georgia, serif; font-size: 24px; color: #F2ECE0">Cuisine asiatique</span><span style="font-size: 15px; line-height: 1.45; color: #B8B1A4">Des saveurs d&#x27;Asie préparées avec soin.</span></li><li style="--i: 3; display: flex; flex-direction: column; gap: 6px; align-items: center; text-align: center; padding: 14px 0"><span style="font-family: 'Gloock', Georgia, serif; font-size: 24px; color: #F2ECE0">Sur place</span><span style="font-size: 15px; line-height: 1.45; color: #B8B1A4">Installez-vous tranquillement et laissez-vous servir.</span></li></ul></div>
+</section>
+
+
+<section aria-label="Galerie" style="padding: 48px 0 52px; display: flex; flex-direction: column; gap: 18px">
+  <div class="rv" style="padding: 0 24px; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px">
+    <h2 style="margin: 0; font-family: 'Gloock', Georgia, serif; font-size: 50px; line-height: 0.98; font-weight: 400;  color: #F2ECE0">Galerie</h2>
+    <span style="font-family: 'Manrope', system-ui, sans-serif; font-size: 13px; color: #B8B1A4; display: flex; gap: 6px; align-items: center; white-space: nowrap">Faites glisser <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+  <div class="gal rv" role="region" aria-label="Photos, défilement horizontal" tabindex="0"><figure style="margin: 0; flex: 0 0 76%; height: 340px; position: relative; overflow: hidden; border-radius: 0"><div class="px" style="position: absolute; inset: -9% 0"><img src="photos/restaurant-28345111.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;"></div></figure><figure style="margin: 0; flex: 0 0 76%; height: 300px; position: relative; overflow: hidden; border-radius: 0"><div class="px" style="position: absolute; inset: -9% 0"><img src="photos/restaurant-34029273.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;"></div></figure><figure style="margin: 0; flex: 0 0 76%; height: 340px; position: relative; overflow: hidden; border-radius: 0"><div class="px" style="position: absolute; inset: -9% 0"><img src="photos/restaurant-30949734.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 0;"></div></figure></div>
+  <p style="margin: 0; padding: 0 24px; font-family: 'Manrope', system-ui, sans-serif; font-size: 13px; color: #B8B1A4">Photos d'illustration : elles seront remplacées par celles de votre commerce.</p>
+</section>
+
+
+<section id="acces" aria-label="Horaires et accès" style="padding: 52px 24px 48px; display: flex; flex-direction: column; gap: 22px; background: #202A38">
+  <h2 class="rv" style="margin: 0; font-family: 'Gloock', Georgia, serif; font-size: 50px; line-height: 0.98; font-weight: 400;  color: #F2ECE0; overflow-wrap: break-word">Horaires &amp; accès</h2>
+  
+    <table class="rv" style="width: 100%; border-collapse: collapse; font-family: 'Manrope', system-ui, sans-serif; font-size: 16px; color: #F2ECE0"><caption style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Horaires d'ouverture</caption><tbody><tr><th scope="row" style="text-align: left; font-weight: 500; padding: 12px 0; border-bottom: 1px solid #3A4657">Lundi</th><td class="ferme" style="text-align: right; padding: 12px 0; border-bottom: 1px solid #3A4657; color: #F2ECE0">Fermé</td></tr><tr><th scope="row" style="text-align: left; font-weight: 500; padding: 12px 0; border-bottom: 1px solid #3A4657">Mardi – Dimanche</th><td class="ouvert" style="text-align: right; padding: 12px 0; border-bottom: 1px solid #3A4657; color: #F2ECE0">12 h – 14 h et 19 h – 21 h 30</td></tr></tbody></table>
+  
+  
+  <div class="rv" style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E2B56A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><p style="margin: 0; font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; line-height: 1.45; color: #F2ECE0">14 Rue de l&#x27;Hôtel de Ville<br>81400 Carmaux</p></div>
+  <div class="rv"><iframe title="Carte OpenStreetMap" src="https://www.openstreetmap.org/export/embed.html?bbox=2.156212,44.047790,2.164212,44.051790&amp;layer=mapnik&amp;marker=44.049790,2.160212" loading="lazy" style="display: block; width: 100%; height: 210px; border: 0; border-radius: 0"></iframe></div>
+  <div class="rv" style="display: flex"><a class="bt" href="https://www.openstreetmap.org/?mlat=44.049790&amp;mlon=2.160212#map=18/44.049790/2.160212" style="--glow: rgba(226, 181, 106, 0.3); flex: 1 1 140px; min-height: 56px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 22px; box-sizing: border-box; border-radius: 0; text-decoration: none; font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; font-weight: 600; background: transparent; color: #F2ECE0; border: 2px solid #F2ECE0;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F2ECE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg><span style="white-space: nowrap">Itinéraire</span></a></div>
+</section>
+
+<footer style="padding: 40px 24px 120px; background: #10161F; display: flex; flex-direction: column; gap: 10px">
+  <p style="margin: 0; font-family: 'Gloock', Georgia, serif; font-size: 26px; line-height: 1.1;  color: #F2ECE0">Au paradis d&#x27;Asie</p>
+  <p style="margin: 0; font-family: 'Manrope', system-ui, sans-serif; font-size: 13px; line-height: 1.55; color: #B8B1A4">Maquette de démonstration non officielle réalisée par Marwen. Ce site n'est pas le site officiel du commerce. · <a style="color: inherit" href="https://www.facebook.com/restaurantparadisdasie" target="_blank" rel="noopener">Facebook</a></p>
+  <p style="margin: 0; font-family: 'Manrope', system-ui, sans-serif; font-size: 13px; line-height: 1.55; color: #B8B1A4">Éditeur de cette maquette : Marwen · <a style="color: inherit" href="mailto:marwenchbiki999@gmail.com">marwenchbiki999@gmail.com</a> · SIRET : en cours</p>
+  <p style="margin: 0; font-family: 'Manrope', system-ui, sans-serif; font-size: 13px; line-height: 1.55; color: #B8B1A4">Photos : MavB / Pexels, Céline  | / Pexels, Isabelle Crt / Pexels, Jerry Flores / Pexels · Carte © <a style="color: inherit" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">contributeurs OpenStreetMap</a></p>
 </footer>
 
-<a class="bouton appel-fixe" href="tel:+33563369354"><svg aria-hidden="true"><use href="#i-tel"/></svg>Appeler</a>
+<div class="cb" style="position: fixed; left: 0; right: 0; bottom: 0; z-index: 6; padding: 12px 16px 18px; background: rgba(24, 32, 44, 0.82); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-top: 1px solid #3A4657; display: flex">
+  <div style="display: flex; flex: 1"><a class="bt" href="tel:+33563369354" style="--glow: rgba(226, 181, 106, 0.3); flex: 1 1 140px; min-height: 60px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 22px; box-sizing: border-box; border-radius: 0; text-decoration: none; font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; font-weight: 600; background: #E2B56A; color: #18202C; border: 2px solid #E2B56A;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#18202C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span style="white-space: nowrap">Appeler · 05 63 36 93 54</span></a></div>
+  
 </div>
+<script>
+/* Animations au défilement : le JavaScript ne fait que poser des marques, tout le contenu existe déjà. */
+(function(){
+ var d=document.documentElement;                     /* la balise <html> */
+ if(!('IntersectionObserver'in window))return;        /* vieux navigateur : page simplement visible */
+ /* 1) Quand un bloc .rv / .st entre à l'écran, on lui met data-in (le CSS le fait apparaître) */
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.isIntersecting){e.target.setAttribute('data-in','');io.unobserve(e.target)}})},
+  {threshold:.12,rootMargin:'0px 0px -6% 0px'});
+ document.querySelectorAll('.rv,.st').forEach(function(n){io.observe(n)});
+ /* 2) Quand le bas du premier écran est dépassé, data-past fait monter le bouton « Appeler » */
+ var s=document.querySelector('[data-sentinel]');
+ if(s)new IntersectionObserver(function(es){es.forEach(function(e){
+  if(!e.isIntersecting&&e.boundingClientRect.top<40)d.setAttribute('data-past','');
+  else d.removeAttribute('data-past')})}).observe(s);
+})();
+</script>
 </body>
 </html>
